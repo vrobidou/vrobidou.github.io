@@ -11,3 +11,16 @@ body {
 		background-color: $navbar-default-link-hover-bg;
 	}
 }
+/* Slide */
+html, body, main {
+	height: 100%;
+}
+.slide {
+	position: relative;
+	height: 100%;
+	padding-top: $navbar-height + 10;
+	padding-bottom: $navbar-height;
+}
+.slide:nth-child(even) {
+	background-color: $brand-primary;
+}
