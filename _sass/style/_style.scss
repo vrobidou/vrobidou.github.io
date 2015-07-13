@@ -1,0 +1,13 @@
+/* Scrollspy */
+body {
+	position: relative;
+}
+/* Navbar link */
+.navbar-default .navbar-nav {
+	> li > a:focus {
+		background-color: transparent;
+	}
+	> .active > a {
+		background-color: $navbar-default-link-hover-bg;
+	}
+}
