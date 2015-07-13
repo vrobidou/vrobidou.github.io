@@ -17,8 +17,7 @@ html, body, main {
 }
 .slide {
 	position: relative;
-	height: 100%;
-	padding: ($navbar-height + 10) 0 $navbar-height 0;
+	padding: ($navbar-height + 10) 0;
 }
 .slide:nth-child(even) {
 	color: $color1;
@@ -32,4 +31,17 @@ html, body, main {
 	bottom: 0;
 	width: 100%;
 	text-align: center;
+}
+.slide:first-child {
+	height: 100%;
+}
+.slide:nth-child(3), .slide:nth-child(4) {
+	height: 100%;
+}
+.slide h1 {
+	margin-bottom: $navbar-height;
+	font-weight: 500;
+}
+.slide p {
+	margin: 0 0 $line-height-computed;
 }

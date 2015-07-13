@@ -12,6 +12,7 @@ $link-hover-color:		$link-color;
 $icon-font-path:		"../fonts/";
 @import 'bootswatch/variables';
 @import 'bootstrap/bootstrap/variables';
+$container-lg:			$container-md;
 @import 'bootstrap/bootstrap';
 @import 'bootswatch/bootswatch';
 @import 'fontawesome/fontawesome';
