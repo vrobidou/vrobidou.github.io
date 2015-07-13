@@ -21,7 +21,8 @@ html, body, main {
 	padding: ($navbar-height + 10) 0 $navbar-height 0;
 }
 .slide:nth-child(even) {
-	background-color: $brand-primary;
+	color: $color1;
+	background-color: $color3;
 }
 .slide:not(:last-of-type)::after {
 	@extend .fa;
