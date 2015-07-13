@@ -1,4 +1,4 @@
-# [vrobidou.github.io]
+# [vrobidou.net]
 
 My home website
 
@@ -6,6 +6,6 @@ My home website
 
 * [Jekyll][jekyll] _([MIT][mit])_
 
-[vrobidou.github.io]: https://vrobidou.github.io
+[vrobidou.net]: https://www.vrobidou.net
 [jekyll]: http://jekyllrb.com
 [mit]: http://opensource.org/licenses/MIT
