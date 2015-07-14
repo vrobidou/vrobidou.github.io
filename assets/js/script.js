@@ -22,4 +22,10 @@ $(document).ready(function() {
 		$('html, body').animate({ scrollTop : $(id).offset().top }, 'slow');
 		return false;
 	});
+	/* Navbar collapse */
+	$('#navbar a').click(function() {
+		if(!$('.navbar-toggle').hasClass('collapsed')) {
+			$("#navbar").collapse('hide');
+		}
+	});
 });
