@@ -16,8 +16,8 @@
 $(document).ready(function() {
 	/* Scrollspy */
 	$('body').scrollspy({ target: '#navbar' });
-	/* Navbar link */
-	$('#navbar a').click(function() {
+	/* Scrollable link */
+	$('a.scrollable').click(function() {
 		var id = $(this).data('target');
 		$('html, body').animate({ scrollTop : $(id).offset().top }, 'slow');
 		return false;
