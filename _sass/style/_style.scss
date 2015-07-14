@@ -12,14 +12,14 @@ body {
 	}
 }
 /* Slide */
-html, body, main {
+html, body {
 	height: 100%;
 }
 .slide {
 	position: relative;
 	padding: ($navbar-height + 10) 0;
 }
-.slide:nth-child(even) {
+.slide:nth-of-type(even) {
 	color: $color1;
 	background-color: $color3;
 }
@@ -32,11 +32,11 @@ html, body, main {
 	width: 100%;
 	text-align: center;
 }
-.slide:first-child {
-	height: 100%;
+.slide:first-of-type {
+	min-height: 100%;
 }
-.slide:nth-child(3), .slide:nth-child(4) {
-	height: 100%;
+.slide:nth-of-type(3), .slide:nth-of-type(4) {
+	min-height: 100%;
 }
 .slide h1 {
 	margin-bottom: $navbar-height;
