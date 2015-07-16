@@ -19,18 +19,34 @@ html, body {
 	position: relative;
 	padding: ($navbar-height + 10) 0;
 }
+.slide-down {
+	@extend .fa;
+	@extend .fa-4x;
+	text-decoration: none;
+	color: $text-color;
+	text-align: center;
+	width: 50px;
+	margin-left: -25px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	&:hover, &:focus {
+		text-decoration: none;
+		color: $text-color;
+	}
+}
+.slide-down::before {
+	content: $fa-var-angle-down;
+}
 .slide:nth-of-type(even) {
 	color: $color1;
 	background-color: $color3;
-}
-.slide:not(:last-of-type)::after {
-	@extend .fa;
-	@extend .fa-4x;
-	content: $fa-var-angle-down;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
+	.slide-down {
+		color: $color1;
+		&:hover, &:focus {
+			color: $color1;
+		}
+	}
 }
 .slide:first-of-type {
 	min-height: 100%;
