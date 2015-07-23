@@ -16,11 +16,11 @@ body {
 		}
 	}
 }
-/* Slide */
+/* Section */
 html, body {
 	height: 100%;
 }
-.slide {
+.section {
 	position: relative;
 	padding: ($navbar-height + 10) 0;
 	h1 {
@@ -38,7 +38,7 @@ html, body {
 	&:nth-of-type(even) {
 		color: $color1;
 		background-color: $color3;
-		.slide-down {
+		.section-down {
 			color: $color1;
 			&:hover,
 			&:focus {
@@ -47,7 +47,7 @@ html, body {
 		}
 	}
 }
-.slide-down {
+.section-down {
 	@extend .fa;
 	@extend .fa-4x;
 	&::before {
