@@ -1,27 +1,64 @@
 ---
 layout: home
+permalink: /
 ---
-<section class="container-fluid section" id="accueil">
-	<a class="scrollable section-down" data-target="#a-propos" href="{{ site.url }}/#a-propos" aria-hidden="true"></a>
+<section class="container-fluid" id="accueil">
+	<a class="scrollable down" data-target="#a-propos" href="{{ site.url }}#a-propos" aria-hidden="true"></a>
 </section>
-<section class="container-fluid section" id="a-propos">
+<section class="container-fluid" id="a-propos">
 	<div class="container">
 		<h1>À Propos</h1>
 		<p>Je m’appelle Vanessa, j’ai 28 ans et je vis à Rennes.</p>
-		<p>Suite à mon parcours de formation en Infographie à la <a href="http://www.mjm-design.com/formation/infographie">MJM Graphic Design</a> de Rennes (promotion 2014/2015), j’ai obtenu le titre professionnel de “concepteur en supports de communication” (BAC+2).</p>
+		<p>Suite à mon parcours de formation en Infographie à la <a href="http://www.mjm-design.com/formation/infographie" target="_blank">MJM Graphic Design</a> de Rennes (promotion 2014/2015), j’ai obtenu le titre professionnel de “concepteur en supports de communication” (BAC+2).</p>
 		<p>Je suis désormais à la recherche d’un emploi d’infographiste.</p>
-		<p>N’hésitez pas à me <a class="scrollable" data-target="#contact" href="{{ site.url }}/#contact">contacter</a> ! À bientôt.</p>
+		<p>N’hésitez pas à me <a class="scrollable" data-target="#contact" href="{{ site.url }}#contact">contacter</a> ! À bientôt.</p>
 	</div>
-	<a class="scrollable section-down" data-target="#portfolio" href="{{ site.url }}/#portfolio" aria-hidden="true"></a>
+	<a class="scrollable down" data-target="#portfolio" href="{{ site.url }}#portfolio" aria-hidden="true"></a>
 </section>
-<section class="container-fluid section" id="portfolio">
+<section class="container-fluid" id="portfolio">
 	<div class="container">
 		<h1>Portfolio</h1>
+		<div class="row">
+			{% for post in site.posts %}
+			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+				<div class="portfolio">
+					<a href="{{ post.url }}" style="background-image:url('{{ site.url }}/assets/img/{{ post.thumbnail }}')"><span class="sr-only">{{ post.title }}</span></a>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
 	</div>
-	<a class="scrollable section-down" data-target="#contact" href="{{ site.url }}/#contact" aria-hidden="true"></a>
+	<a class="scrollable down" data-target="#contact" href="{{ site.url }}#contact" aria-hidden="true"></a>
 </section>
-<section class="container-fluid section" id="contact">
+<section class="container-fluid" id="contact">
 	<div class="container">
-		<h1>Contact</h1>
+		<h1>Get in touch !</h1>
+		<p>Contactez-moi et je vous répondrai au plus vite.</p>
+		<ul class="list-inline">
+			<li>
+				<a href="mailto:{{ site.social.email }}">
+					<span class="fa fa-2x fa-fw fa-envelope-square" aria-hidden="true"></span>
+					<span class="sr-only">Email</span>
+				</a>
+			</li>
+			<li>
+				<a href="{{ site.social.facebook }}" target="_blank">
+					<span class="fa fa-2x fa-fw fa-facebook-square" aria-hidden="true"></span>
+					<span class="sr-only">Facebook</span>
+				</a>
+			</li>
+			<li>
+				<a href="{{ site.social.linkedin }}" target="_blank">
+					<span class="fa fa-2x fa-fw fa-linkedin-square" aria-hidden="true"></span>
+					<span class="sr-only">Linkedin</span>
+				</a>
+			</li>
+			<li>
+				<a href="{{ site.social.tumblr }}" target="_blank">
+					<span class="fa fa-2x fa-fw fa-tumblr-square" aria-hidden="true"></span>
+					<span class="sr-only">Tumblr</span>
+				</a>
+			</li>
+		</ul>
 	</div>
 </section>
