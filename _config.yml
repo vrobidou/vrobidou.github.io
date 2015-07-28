@@ -10,6 +10,14 @@ social:
   tumblr: http://vanessarobidou.tumblr.com
 
 defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: portfolio
+
+permalink: /portfolio/:title/
 
 gems:
   - jekyll-sitemap

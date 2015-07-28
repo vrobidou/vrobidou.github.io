@@ -1,0 +1,41 @@
+---
+stylesheet: portfolio
+javascript: portfolio
+---
+{% include top.html %}
+<header role="navigation" class="navbar navbar-default navbar-static-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<p class="navbar-text navbar-right">
+				<a class="navbar-link" href="{{ site.url }}#portfolio">
+					<span class="fa fa-lg fa-fw fa-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Retour</span>
+				</a>
+			</p>
+		</div>
+	</div>
+</header>
+{% if page.images %}
+<section class="container carousel slide" data-ride="carousel" id="carousel">
+	<div class="carousel-inner" role="listbox">
+		{% for image in page.images limit:1 %}
+		<div class="item active" style="background-image:url('{{ site.url }}/assets/img/{{ image }}')"></div>
+		{% endfor %}
+		{% for image in page.images offset:1 %}
+		<div class="item" style="background-image:url('{{ site.url }}/assets/img/{{ image }}')"></div>
+		{% endfor %}
+	</div>
+</section>
+{% endif %}
+<section class="container">
+	<div class="page-header">
+		<h1>{{ page.title }}
+			{% if page.subtitle %}
+			<br class="visible-xs-inline">
+			<small>{{ page.subtitle }}</small>
+			{% endif %}
+		</h1>
+	</div>
+	{{ content }}
+</section>
+{% include bottom.html %}
