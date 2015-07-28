@@ -13,6 +13,7 @@
 {% include js/bootstrap/scrollspy.js %}
 {% include js/bootstrap/tab.js %}
 {% include js/bootstrap/affix.js %}
+{% include js/isotope.pkgd.js %}
 $(document).ready(function() {
 	/* Scrollspy */
 	$('body').scrollspy({ target: '#navbar' });
