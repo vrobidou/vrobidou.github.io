@@ -13,3 +13,11 @@
 {% comment %}{% include js/bootstrap/scrollspy.js %}{% endcomment %}
 {% comment %}{% include js/bootstrap/tab.js %}{% endcomment %}
 {% comment %}{% include js/bootstrap/affix.js %}{% endcomment %}
+$(document).ready(function() {
+	/* Scrollable link */
+	$('a.scrollable').click(function() {
+		var id = $(this).data('target');
+		$('html, body').animate({ scrollTop : $(id).offset().top }, 'slow');
+		return false;
+	});
+});
