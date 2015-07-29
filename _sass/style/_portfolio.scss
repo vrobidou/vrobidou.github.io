@@ -12,6 +12,18 @@ footer {
 	bottom: 0;
 	width: 100%;
 }
+/* Navbar */
+.navbar {
+	.navbar-text {
+		margin-left: $navbar-padding-horizontal;
+	}
+	.icon-prev {
+		@extend .fa;
+		@extend .fa-lg;
+		@extend .fa-fw;
+		@extend .fa-chevron-circle-left;
+	}
+}
 /* Carousel */
 .carousel {
 	padding: 0;
