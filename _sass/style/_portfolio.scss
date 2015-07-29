@@ -51,10 +51,10 @@ footer {
 			@extend .fa-lg;
 		}
 		> .icon-next {
-			@extend .fa-chevron-right;
+			@extend .fa-angle-right;
 		}
 		> .icon-prev {
-			@extend .fa-chevron-left;
+			@extend .fa-angle-left;
 		}
 	}
 }
