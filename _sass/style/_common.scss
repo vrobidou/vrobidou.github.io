@@ -12,13 +12,19 @@
 }
 /* Footer */
 footer {
-	height: $navbar-height * 0.75;
-	line-height: $navbar-height * 0.75;
+	height: $navbar-height * 0.7;
+	line-height: $navbar-height * 0.7;
 	background-color: $color2;
-	font-size: .9em;
+	font-size: .8em;
 	a {
 		color: $text-color;
 		text-decoration: none;
+		> .icon-up {
+			@extend .fa;
+			@extend .fa-lg;
+			@extend .fa-fw;
+			@extend .fa-chevron-circle-up;
+		}
 		&:hover,
 		&:focus {
 			color: $text-color;
