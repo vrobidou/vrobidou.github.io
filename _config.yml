@@ -19,5 +19,8 @@ defaults:
 
 permalink: /portfolio/:title/
 
+sass:
+  style: :compressed
+
 gems:
   - jekyll-sitemap
