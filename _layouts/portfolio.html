@@ -19,10 +19,18 @@ javascript: portfolio
 <section class="container carousel slide" data-ride="carousel" id="carousel">
 	<div class="carousel-inner" role="listbox">
 		{% for image in page.images limit:1 %}
-		<div class="item active" style="background-image:url('{{ site.url }}/assets/img/{{ image }}')"></div>
+		<div class="item active">
+			<div class="wrapper">
+				<div class="picture" style="background-image:url('{{ site.url }}/assets/img/{{ image }}')"></div>
+			</div>
+		</div>
 		{% endfor %}
 		{% for image in page.images offset:1 %}
-		<div class="item" style="background-image:url('{{ site.url }}/assets/img/{{ image }}')"></div>
+		<div class="item">
+			<div class="wrapper">
+				<div class="picture" style="background-image:url('{{ site.url }}/assets/img/{{ image }}')"></div>
+			</div>
+		</div>
 		{% endfor %}
 	</div>
 	<a role="button" class="carousel-control left" data-slide="prev" href="#carousel">
