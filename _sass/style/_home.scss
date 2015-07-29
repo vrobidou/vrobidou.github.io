@@ -20,9 +20,7 @@ section {
 	> .down {
 		@extend .fa;
 		@extend .fa-4x;
-		&::before {
-			content: $fa-var-angle-down;
-		}
+		@extend .fa-angle-down;
 		position: absolute;
 		bottom: 0;
 		left: 50%;
@@ -55,39 +53,37 @@ section {
 		background-repeat: no-repeat;
 		background-position: center;
 	}
-}
-/* Portfolio */
-#portfolio {
-	.row {
-		margin-top: $grid-gutter-width;
-	}
-	.portfolio {
-		position: relative;
-		width: 100%;
-		padding-bottom: 100%;
-		margin-bottom: $grid-gutter-width;
-		> a {
-			display: block;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			background-size: 100% auto;
-			background-position: center;
-			background-repeat: no-repeat;
+	&#portfolio {
+		.row {
+			margin-top: $grid-gutter-width;
+		}
+		.portfolio {
+			position: relative;
+			width: 100%;
+			padding-bottom: 100%;
+			margin-bottom: $grid-gutter-width;
+			> a {
+				display: block;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-size: 100% auto;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
 		}
 	}
-}
-/* Contact */
-#contact {
-	ul {
-		text-align: center;
-		a {
-			color: $color1;
-			&:hover,
-			&:focus {
+	&#contact {
+		ul {
+			text-align: center;
+			a {
 				color: $color1;
+				&:hover,
+				&:focus {
+					color: $color1;
+				}
 			}
 		}
 	}
