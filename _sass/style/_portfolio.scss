@@ -30,4 +30,19 @@ footer {
 			background-repeat: no-repeat;
 		}
 	}
+	> .carousel-control {
+		width: 7%;
+		background: none;
+		> .icon-next,
+		> .icon-prev {
+			@extend .fa;
+			@extend .fa-lg;
+		}
+		> .icon-next {
+			@extend .fa-chevron-right;
+		}
+		> .icon-prev {
+			@extend .fa-chevron-left;
+		}
+	}
 }
