@@ -6,4 +6,7 @@ images:
   - oms_2.png
   - oms_3.png
   - oms_4.png
+categories:
+  - Print
+  - Identité visuelle
 ---

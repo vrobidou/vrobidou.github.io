@@ -57,20 +57,32 @@ section {
 		.row {
 			margin-top: $grid-gutter-width;
 		}
-		.portfolio {
-			position: relative;
-			padding-bottom: 100%;
-			margin-bottom: $grid-gutter-width;
-			> a {
-				display: block;
-				position: absolute;
-				top: 0;
-				left: 0;
-				bottom: 0;
-				width: 100%;
-				background-size: 100% auto;
-				background-position: center;
-				background-repeat: no-repeat;
+		.nav.nav-pills a {
+			cursor: pointer;
+		}
+		#projects {
+			@extend .row;
+			> .project {
+				@extend .col-xs-6;
+				@extend .col-sm-4;
+				@extend .col-md-3;
+				@extend .col-lg-3;
+				margin-bottom: $grid-gutter-width;
+				.wrapper > .picture {
+					position: relative;
+					padding-bottom: 100%;
+					> a {
+						display: block;
+						position: absolute;
+						top: 0;
+						left: 0;
+						bottom: 0;
+						width: 100%;
+						background-size: 100% auto;
+						background-position: center;
+						background-repeat: no-repeat;
+					}
+				}
 			}
 		}
 	}

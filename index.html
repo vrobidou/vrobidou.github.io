@@ -2,6 +2,15 @@
 layout: home
 permalink: /
 ---
+{% assign catstr = ';' %}
+{% for post in site.posts %}
+{% for category in post.categories %}
+{% if catstr contains category %}{% else %}
+{% capture catstr %}{{ catstr | prepend:';' | prepend:category }}{% endcapture %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+{% assign categories = catstr | split:';' | sort %}
 <section class="container-fluid" id="accueil">
 	<span class="sr-only">{{ site.title }} - {{ site.subtitle }}</span>
 	<a class="scrollable down" data-target="#a-propos" href="{{ site.url }}#a-propos" aria-hidden="true"></a>
@@ -19,11 +28,21 @@ permalink: /
 <section class="container-fluid" id="portfolio">
 	<div class="container">
 		<h1>Portfolio</h1>
-		<div class="row">
+		<ul class="nav nav-pills" id="categories">
+			<li role="presentation" class="active"><a data-filter="*">Tout voir</a></li>
+			{% for category in categories %}
+			<li role="presentation"><a data-filter="{{ category | downcase | replace:' ','-' | prepend:'.category-' }}">{{ category | capitalize }}</a></li>
+			{% endfor %}
+		</ul>
+		<div id="projects">
 			{% for post in site.posts %}
-			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
-				<div class="portfolio">
-					<a href="{{ post.url }}" style="background-image:url('{{ site.url }}/assets/img/{{ post.thumbnail }}')"><span class="sr-only">{{ post.title }}</span></a>
+			<div class="project{% for category in post.categories %}{{ category | downcase | replace:' ','-' | prepend:' category-' }}{% endfor %}">
+				<div class="wrapper">
+					<div class="picture">
+						<a href="{{ post.url }}" style="background-image:url('{{ site.url }}/assets/img/{{ post.thumbnail }}')">
+							<span class="sr-only">{{ post.title }}</span>
+						</a>
+					</div>
 				</div>
 			</div>
 			{% endfor %}

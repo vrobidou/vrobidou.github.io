@@ -29,4 +29,17 @@ $(document).ready(function() {
 			$("#navbar").collapse('hide');
 		}
 	});
+	/* Isotope */
+	var container = $('#projects').isotope({
+		itemSelector: '.project',
+		layoutMode: 'masonry'
+	});
+	var control = $('#categories').on('click', 'a', function() {
+		var filter = $(this).attr('data-filter');
+		container.isotope({filter: filter});
+	});
+	control.on('click', 'li', function() {
+		control.find('.active').removeClass('active');
+		$(this).addClass('active');
+	});
 });

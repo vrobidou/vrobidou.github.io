@@ -10,4 +10,6 @@ images:
   - hb_7.png
   - hb_8.png
   - hb_9.png
+categories:
+  - Print
 ---
