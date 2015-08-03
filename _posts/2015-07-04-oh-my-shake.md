@@ -1,11 +1,11 @@
 ---
 title: Oh my Shake
-thumbnail: thumbnail_oms.png
+thumbnail: thumbnail_oms.jpg
 images:
-  - oms_1.png
-  - oms_2.png
-  - oms_3.png
-  - oms_4.png
+  - oms_1.jpg
+  - oms_2.jpg
+  - oms_3.jpg
+  - oms_4.jpg
 categories:
   - Print
   - Identité visuelle

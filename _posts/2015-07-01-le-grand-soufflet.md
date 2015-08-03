@@ -1,8 +1,8 @@
 ---
-thumbnail: thumbnail_soufflet.png
+thumbnail: thumbnail_soufflet.jpg
 images:
-  - soufflet_1.png
-  - soufflet_2.png
+  - soufflet_1.jpg
+  - soufflet_2.jpg
 categories:
   - Print
 ---

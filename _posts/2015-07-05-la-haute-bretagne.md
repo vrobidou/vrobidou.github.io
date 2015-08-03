@@ -1,15 +1,15 @@
 ---
-thumbnail: thumbnail_hb.png
+thumbnail: thumbnail_hb.jpg
 images:
-  - hb_1.png
-  - hb_2.png
-  - hb_3.png
-  - hb_4.png
-  - hb_5.png
-  - hb_6.png
-  - hb_7.png
-  - hb_8.png
-  - hb_9.png
+  - hb_1.jpg
+  - hb_2.jpg
+  - hb_3.jpg
+  - hb_4.jpg
+  - hb_5.jpg
+  - hb_6.jpg
+  - hb_7.jpg
+  - hb_8.jpg
+  - hb_9.jpg
 categories:
   - Print
 ---
