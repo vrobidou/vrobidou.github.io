@@ -15,7 +15,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: portfolio
+      layout: carousel
 
 permalink: /portfolio/:title/
 
