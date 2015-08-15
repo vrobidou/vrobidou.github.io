@@ -1,0 +1,30 @@
+@import "common";
+/* Sticky footer */
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	margin-bottom: $navbar-height * 0.7;
+}
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+/* Navbar */
+.navbar {
+	.navbar-text {
+		margin-left: $navbar-padding-horizontal;
+	}
+	.icon-prev {
+		@extend .fa;
+		@extend .fa-lg;
+		@extend .fa-fw;
+		@extend .fa-chevron-circle-left;
+	}
+}
+/* Pictures */
+.pictures img:not(:last-of-type) {
+	margin-bottom: $navbar-margin-bottom;
+}

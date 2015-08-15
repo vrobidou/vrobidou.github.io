@@ -6,4 +6,5 @@ images:
   - faire_part_2.jpg
 categories:
   - Print
+layout: column
 ---

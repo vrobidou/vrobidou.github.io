@@ -1,0 +1,36 @@
+---
+stylesheet: column
+javascript: column
+---
+{% include top.html %}
+<header role="navigation" class="navbar navbar-default navbar-static-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<p class="navbar-text navbar-right">
+				<a class="navbar-link" href="{{ site.url }}#portfolio">
+					<span class="icon-prev" aria-hidden="true"></span>
+					<span class="sr-only">Retour</span>
+				</a>
+			</p>
+		</div>
+	</div>
+</header>
+{% if page.images %}
+<section class="container pictures">
+{% for image in page.images %}
+	<img src="{{ site.url }}/assets/img/{{ image }}" class="img-responsive">
+{% endfor %}
+</section>
+{% endif %}
+<section class="container">
+	<div class="page-header">
+		<h1>{{ page.title }}
+			{% if page.subtitle %}
+			<br class="visible-xs-inline">
+			<small>{{ page.subtitle }}</small>
+			{% endif %}
+		</h1>
+	</div>
+	{{ content }}
+</section>
+{% include bottom.html %}
