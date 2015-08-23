@@ -8,3 +8,7 @@ categories:
   - Print
 layout: column
 ---
+
+Modèle de faire-part de naissance
+
+*Création originale*
