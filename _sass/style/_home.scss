@@ -98,4 +98,11 @@ section {
 			}
 		}
 	}
+	&#a-propos {
+		img.me {
+			@extend .img-circle;
+			@extend .center-block;
+			margin: 20px auto;
+		}
+	}
 }
