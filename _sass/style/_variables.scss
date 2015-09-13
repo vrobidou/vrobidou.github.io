@@ -9,7 +9,7 @@ $link-color:				lighten($color3, 30%);
 $link-hover-color:			$link-color;
 $nav-pills-active-link-hover-bg:	$color3;
 $icon-font-path:			"../fonts/";
-$web-font-path: "https://fonts.googleapis.com/css?family=Ubuntu:300,400,700";
+$web-font-path: "https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700";
 $font-family-sans-serif:  "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
 @import 'bootswatch/variables';
 @import 'bootstrap/variables';

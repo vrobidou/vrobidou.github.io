@@ -11,8 +11,17 @@ permalink: /
 {% endfor %}
 {% endfor %}
 {% assign categories = catstr | split:';' | sort %}
-<section class="container-fluid" id="accueil">
-	<span class="sr-only">{{ site.title }} - {{ site.subtitle }}</span>
+<section class="container" id="accueil">
+	<div class="wrapper">
+		<div class="innerwrapper">
+			<div class="cadre">
+				<div class="text">
+					<p class="welcome">Bienvenue,<br/><span class="small">je suis</span> VANESSA ROBIDOU.</p>
+					<p class="subtitle">Design graphique - Illustration</p>
+				</div>
+			</div>
+		</div>
+	</div>
 	<a class="scrollable down" data-target="#a-propos" href="{{ site.url }}#a-propos" aria-hidden="true"></a>
 </section>
 <section class="container-fluid" id="a-propos">
