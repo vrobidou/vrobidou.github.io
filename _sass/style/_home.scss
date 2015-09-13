@@ -147,6 +147,10 @@ section {
 		}
 	}
 	&#a-propos {
+		a {
+			font-weight: 700;
+			color: $color1;
+		}
 		img.me {
 			@extend .img-circle;
 			@extend .center-block;
