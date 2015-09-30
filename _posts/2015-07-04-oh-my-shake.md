@@ -10,7 +10,7 @@ categories:
   - Print
   - Identité visuelle
 ---
-  
+
 *Projet d'études*
 
 Création de logotype et de packaging pour un nouveau produit de la marque Candia : **le milkshake instantané**.

@@ -3,6 +3,9 @@ subtitle: infographiste
 
 url: https://www.vanessarobidou.fr
 
+kramdown:
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+
 social:
   email: vrobidou@gmail.com
   facebook: https://www.facebook.com/vadoudidou

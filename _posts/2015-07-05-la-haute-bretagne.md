@@ -20,4 +20,4 @@ Création d'une brochure touristique pour la marque **Haute Bretagne** associée
 
 Utilisation du **guide marque** mis à disposition par la marque.
 
-J'ai choisi de mettre l’accent sur le voyage pour la campagne de communication pour mettre en avant la diversité des territoires et donner une image dynamique de la Haute Bretagne.
+J'ai choisi de mettre l'accent sur le voyage pour la campagne de communication pour mettre en avant la diversité des territoires et donner une image dynamique de la Haute Bretagne.
