@@ -27,10 +27,11 @@
 footer {
 	height: $navbar-height * 0.7;
 	line-height: $navbar-height * 0.7;
-	background-color: $color2;
+	background-color: $color1;
 	font-size: .8em;
+	color: $color0;
 	a {
-		color: $text-color;
+		color: $color0;
 		text-decoration: none;
 		> .icon-up {
 			@extend .fa;
@@ -40,7 +41,7 @@ footer {
 		}
 		&:hover,
 		&:focus {
-			color: $text-color;
+			color: $color0;
 			text-decoration: none;
 		}
 	}

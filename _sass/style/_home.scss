@@ -7,6 +7,24 @@ body {
 html, body {
 	height: 100%;
 }
+@mixin section-color($background, $text, $title, $down) {
+	@if $background != $body-bg { background-color: $background; }
+	@if $text != $text-color { color: $text; }
+	@if $title != $text-color {
+		h1 {
+			color: $title;
+		}
+	}
+	@if $down != $link-color {
+		> .down {
+			color: $down;
+			&:hover,
+			&:focus {
+				color: $down;
+			}
+		}
+	}
+}
 section {
 	position: relative;
 	padding: ($navbar-height + 10) 0;
@@ -28,22 +46,9 @@ section {
 		margin-left: -25px;
 		text-align: center;
 		text-decoration: none;
-		color: $color2;
 		&:hover,
 		&:focus {
 			text-decoration: none;
-			color: $color2;
-		}
-	}
-	&:nth-of-type(even) {
-		color: $color1;
-		background-color: $color3;
-		> .down {
-			color: $color1;
-			&:hover,
-			&:focus {
-				color: $color1;
-			}
 		}
 	}
 	&#accueil {
@@ -100,17 +105,21 @@ section {
 				}
 			}
 		}
+		@include section-color($body-bg, $text-color, $text-color, $color2);
 	}
 	&#a-propos {
 		a {
 			font-weight: 700;
-			color: $color1;
 		}
 		img.me {
 			@extend .img-circle;
 			@extend .center-block;
 			margin: 20px auto;
 		}
+		@include section-color($color4, $color0, $color2, $color0);
+	}
+	&#prestations {
+		@include section-color($body-bg, $text-color, $color3, $link-color);
 	}
 	&#portfolio {
 		.row {
@@ -144,6 +153,7 @@ section {
 				}
 			}
 		}
+		@include section-color($body-bg, $text-color, $color4, $color4);
 	}
 	&#contact {
 		ul {
@@ -156,5 +166,6 @@ section {
 				}
 			}
 		}
+		@include section-color($color4, $color0, $color0, $link-color);
 	}
 }
