@@ -1,4 +1,4 @@
-# [vrobidou.net]
+# [vanessarobidou.fr]
 
 My home website
 
@@ -13,7 +13,7 @@ My home website
 * [Font Awesome][fontawesome] _([MIT][mit], [SIL OFL 1.1][ofl11])_
 * [Isotope][isotope] _([GPLv3][gplv30])_
 
-[vrobidou.net]: https://www.vrobidou.net
+[vanessarobidou.fr]: https://www.vanessarobidou.fr
 [jekyll]: http://jekyllrb.com
 [jquery]: http://jquery.com
 [boostrap]: http://getbootstrap.com
