@@ -36,9 +36,9 @@ section {
 		margin: 0 0 $line-height-computed;
 	}
 	> .down {
-		@extend .fa;
-		@extend .fa-4x;
-		@extend .fa-caret-down;
+		//@extend .fa;
+		//@extend .fa-4x;
+		//@extend .fa-caret-down;
 		position: absolute;
 		bottom: 0;
 		left: 50%;

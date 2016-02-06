@@ -18,10 +18,10 @@ footer {
 		margin-left: $navbar-padding-horizontal;
 	}
 	.icon-prev {
-		@extend .fa;
-		@extend .fa-lg;
-		@extend .fa-fw;
-		@extend .fa-chevron-circle-left;
+		//@extend .fa;
+		//@extend .fa-lg;
+		//@extend .fa-fw;
+		//@extend .fa-chevron-circle-left;
 	}
 }
 /* Carousel */
@@ -47,14 +47,14 @@ footer {
 		filter: none;
 		> .icon-next,
 		> .icon-prev {
-			@extend .fa;
-			@extend .fa-lg;
+			//@extend .fa;
+			//@extend .fa-lg;
 		}
 		> .icon-next {
-			@extend .fa-angle-right;
+			//@extend .fa-angle-right;
 		}
 		> .icon-prev {
-			@extend .fa-angle-left;
+			//@extend .fa-angle-left;
 		}
 	}
 }

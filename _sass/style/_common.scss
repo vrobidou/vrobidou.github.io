@@ -34,10 +34,10 @@ footer {
 		color: $color0;
 		text-decoration: none;
 		> .icon-up {
-			@extend .fa;
-			@extend .fa-lg;
-			@extend .fa-fw;
-			@extend .fa-chevron-circle-up;
+			//@extend .fa;
+			//@extend .fa-lg;
+			//@extend .fa-fw;
+			//@extend .fa-chevron-circle-up;
 		}
 		&:hover,
 		&:focus {
