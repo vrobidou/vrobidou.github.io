@@ -1,18 +1,13 @@
 /* Navbar link */
+$navbar-brand-vertical: 2px;
 .navbar-default {
 	border-bottom: 0;
+	.navbar-brand {
+		padding: $navbar-brand-vertical $navbar-padding-horizontal;
+		font-size: $navbar-height - (2 * $navbar-brand-vertical);
+		line-height: $navbar-height - (2 * $navbar-brand-vertical);
+	}
 	.navbar-nav {
-		@media (min-width: $screen-sm-min) {
-			width: 100%;
-			text-align: center;
-			> li {
-				float: none;
-				display: inline-block;
-				&:not(:last-child) {
-					margin-right: -4px;
-				}
-			}
-		}
 		font-weight: 300;
 		text-transform:	uppercase;
 		> li > a:focus {

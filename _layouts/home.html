@@ -4,7 +4,7 @@ javascript: home
 ---
 {% include top.html %}
 <header role="navigation" class="navbar navbar-default navbar-fixed-top">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
 				<span class="sr-only">Toggle navigation</span>
@@ -12,9 +12,13 @@ javascript: home
 				<span class="icon-bar" aria-hidden="true"></span>
 				<span class="icon-bar" aria-hidden="true"></span>
 			</button>
+			<a class="navbar-brand" href="{{ site.url }}">
+				<span class="sr-only">{{ site.title }}</span>
+				<span class="icon-logofull" aria-hidden="true"></span>
+			</a>
 		</div>
 		<div class="navbar-collapse collapse" id="navbar">
-			<ul class="nav navbar-nav">
+			<ul class="nav navbar-nav navbar-right">
 				<li><a class="scrollable" data-target="#accueil" href="{{ site.url }}">Accueil</a></li>
 				<li><a class="scrollable" data-target="#a-propos" href="{{ site.url }}#a-propos">À Propos</a></li>
 				<li><a class="scrollable" data-target="#prestations" href="{{ site.url }}#prestations">Prestations</a></li>
