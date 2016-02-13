@@ -5,7 +5,6 @@ thumbnail: thumbnail_fleuriste.jpg
 images:
   - fleuriste_1.jpg
   - fleuriste_2.jpg
-  - fleuriste_3.jpg
 categories:
   - Print
   - Identité visuelle
