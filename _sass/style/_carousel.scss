@@ -18,16 +18,16 @@ footer {
 
 /* Navbar */
 .navbar {
-	.navbar-text {
-		margin-left: $navbar-padding-horizontal;
-	}
+	a {
+		margin-left: 10px;
+		color: $color1;
+		text-decoration: none;
 
-	.icon-prev {
-		//@extend .fa;
-		//@extend .fa-lg;
-		//@extend .fa-fw;
-		//@extend .fa-chevron-circle-left;
-
+		&:hover,
+		&:focus {
+			color: $color0;
+			text-decoration: none;
+		}
 	}
 }
 
@@ -35,11 +35,11 @@ footer {
 .carousel {
 	padding: 0;
 
-	> .carousel-inner > .item > .wrapper {
+	.wrapper {
 		position: relative;
 		padding-bottom: 66%;
 
-		> .picture {
+		.picture {
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -51,26 +51,17 @@ footer {
 		}
 	}
 
-	> .carousel-control {
+	.carousel-control {
 		width: 7%;
 		background: none;
 		filter: none;
 
-		> .icon-next,
-		> .icon-prev {
-			//@extend .fa;
-			//@extend .fa-lg;
-
+		.icon-right {
+			@extend .icon-next;
 		}
 
-		> .icon-next {
-			//@extend .fa-angle-right;
-
-		}
-
-		> .icon-prev {
-			//@extend .fa-angle-left;
-
+		.icon-left {
+			@extend .icon-prev;
 		}
 	}
 }

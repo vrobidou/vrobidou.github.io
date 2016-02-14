@@ -18,20 +18,22 @@ footer {
 
 /* Navbar */
 .navbar {
-	.navbar-text {
-		margin-left: $navbar-padding-horizontal;
-	}
+	a {
+		margin-left: 10px;
+		color: $color1;
+		text-decoration: none;
 
-	.icon-prev {
-		//@extend .fa;
-		//@extend .fa-lg;
-		//@extend .fa-fw;
-		//@extend .fa-chevron-circle-left;
-
+		&:hover,
+		&:focus {
+			color: $color0;
+			text-decoration: none;
+		}
 	}
 }
 
 /* Pictures */
-.pictures img:not(:last-of-type) {
-	margin-bottom: $navbar-margin-bottom;
+.pictures {
+	img + img {
+		margin-top: $navbar-margin-bottom;
+	}
 }
