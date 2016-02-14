@@ -7,10 +7,9 @@ kramdown:
   smart_quotes: ["apos", "apos", "quot", "quot"]
 
 social:
-  email: vrobidou@gmail.com
-  facebook: https://www.facebook.com/vadoudidou
+  email: contact@vanessarobidou.fr
+  facebook: https://www.facebook.com/design.robidou
   linkedin: https://www.linkedin.com/in/vanessarobidou
-  tumblr: http://vanessarobidou.tumblr.com
 
 defaults:
   -

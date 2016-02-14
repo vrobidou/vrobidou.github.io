@@ -11,15 +11,14 @@ permalink: /
 {% endfor %}
 {% endfor %}
 {% assign categories = catstr | split:';' | sort %}
-<section class="container" id="accueil">
-	<div class="wrapper">
-		<div class="innerwrapper">
-			<div class="cadre">
-				<div class="text">
-					<p class="welcome">Bienvenue,<br/><span class="small">je suis</span> VANESSA ROBIDOU.</p>
-					<p class="subtitle">Design graphique - Illustration</p>
-				</div>
-			</div>
+<section class="container-fluid" id="accueil">
+	<div class="container">
+		<div class="logo">
+			<span class="icon icon-logo" aria-hidden="true"></span>
+		</div>
+		<div class="text">
+			<p class="welcome">&laquo; <span class="small">Bienvenue,<br/>je suis</span> VANESSA ROBIDOU &raquo;</p>
+			<p class="subtitle">Design Graphique &amp; Illustration</p>
 		</div>
 	</div>
 	<a class="scrollable down" data-target="#a-propos" href="{{ site.url }}#a-propos" aria-hidden="true"></a>
@@ -27,12 +26,35 @@ permalink: /
 <section class="container-fluid" id="a-propos">
 	<div class="container">
 		<h1>À Propos</h1>
-		<p>Je m'appelle Vanessa, j'ai 28 ans et je vis à Rennes.</p>
-		<p>Suite à mon parcours de formation en Infographie à la <a href="http://www.mjm-design.com/formation/infographie" target="_blank">MJM Graphic Design</a> de Rennes (promotion 2014/2015), j'ai obtenu le titre professionnel de "concepteur en supports de communication" (BAC+2).</p>
-		<p>Je suis désormais à la recherche d'un emploi d'infographiste. Si vous le souhaitez, vous pouvez consulter mon <a href="{{ site.url }}/assets/files/vanessa_robidou_cv.pdf" target="_blank">CV</a>.</p>
-		<p>N'hésitez pas à me <a class="scrollable" data-target="#contact" href="{{ site.url }}#contact">contacter</a> ! À bientôt.</p>
+		<p><strong>Infographiste indépendante à Rennes</strong>, mon travail consiste à composer un message clair et efficace en alliant texte, photos, illustrations…</br>Pour faire simple : <em>je traduis vos idées en visuel !</em></p>
+		<p>Je créé le logo qui reflétera les valeurs de votre entreprise, la carte de visite qui permettra à vos prospect de vous contacter aisément ou bien encore le dépliant qui présentera l’étendue de vos prestations.</p>
+		<p>Passionnée d’illustration, j’utilise cette ressource en fonction de votre projet.</p>
+		<p>N'hésitez pas à me <a class="scrollable" data-target="#contact" href="{{ site.url }}#contact">contacter</a> pour me parler de votre projet et obtenir un devis personnalisé.</p>
 	</div>
-	<a class="scrollable down" data-target="#portfolio" href="{{ site.url }}#portfolio" aria-hidden="true"></a>
+</section>
+<section class="container-fluid" id="prestations">
+	<div class="container">
+		<div class="row">
+			<h1>Prestations</h1>
+			<article>
+				<h1>Pour qui ?</h1>
+				<p>Passionnée par mon métier, je suis à votre écoute pour répondre à vos besoins en matière de communication "print" à titre <strong>professionnel, personnel, institutionnel, associatif...</strong></p>
+				<p>Si vous ne vous retrouvez pas dans cette liste, pas de panique ! <a class="scrollable" data-target="#contact" href="{{ site.url }}#contact">Contactez-moi</a> pour me parler de votre projet.</p>
+			</article>
+			<article>
+				<h1>Quoi ?</h1>
+				<p>Je vous propose mes compétences pour réaliser votre <strong>identité visuelle</strong> (logo, charte graphique...) que j'adapte si vous le souhaitez sur différents supports : <em>carte de visite, papier en-tête, carte de correspondance...</em></p>
+				<p>Je m'occupe aussi de la conception de <strong>brochure, flyer, affiche, dépliant, bulletin municipal...</strong></p>
+				<p>L'<strong>illustration</strong> est une spécificité de mon travail que j'aborde si besoin en fonction des projets.</p>
+			</article>
+			<article>
+				<h1>Comment ?</h1>
+				<p>Interlocutrice unique et impliquée, j'effectue un <strong>devis sur mesure</strong> et adapté à votre demande.</p>
+				<p>Si vous choisissez de me confier votre projet, je mettrai tout en oeuvre pour vous présenter des solutions <strong>en accord avec vos besoins.</strong></p>
+				<p>Vous pouvez décider de me confier le <strong>suivi d'impression</strong> ou bien de le gérer de votre côté. Dans ce cas, je vous remettrai les fichiers PDF haute résolution, destinés à l'imprimeur.</p>
+			</article>
+		</div>
+	</div>
 </section>
 <section class="container-fluid" id="portfolio">
 	<div class="container">
@@ -43,11 +65,11 @@ permalink: /
 			<li role="presentation"><a data-filter="{{ category | downcase | replace:' ','-' | prepend:'.category-' }}">{{ category | capitalize }}</a></li>
 			{% endfor %}
 		</ul>
-		<div id="projects">
+		<div class="row" id="projects">
 			{% for post in site.posts %}
 			<div class="project{% for category in post.categories %}{{ category | downcase | replace:' ','-' | prepend:' category-' }}{% endfor %}">
 				<div class="wrapper">
-					<div class="picture">
+					<div class="thumbnail">
 						<a href="{{ post.url }}" style="background-image:url('{{ site.url }}/assets/img/{{ post.thumbnail }}')">
 							<span class="sr-only">{{ post.title }}</span>
 						</a>
@@ -57,7 +79,6 @@ permalink: /
 			{% endfor %}
 		</div>
 	</div>
-	<a class="scrollable down" data-target="#contact" href="{{ site.url }}#contact" aria-hidden="true"></a>
 </section>
 <section class="container-fluid" id="contact">
 	<div class="container">
@@ -66,26 +87,20 @@ permalink: /
 		<ul class="list-inline">
 			<li>
 				<a href="mailto:{{ site.social.email }}">
-					<span class="fa fa-2x fa-fw fa-envelope-square" aria-hidden="true"></span>
+					<span class="icon icon-contact" aria-hidden="true"></span>
 					<span class="sr-only">Email</span>
 				</a>
 			</li>
 			<li>
 				<a href="{{ site.social.facebook }}" target="_blank">
-					<span class="fa fa-2x fa-fw fa-facebook-square" aria-hidden="true"></span>
+					<span class="icon icon-facebook" aria-hidden="true"></span>
 					<span class="sr-only">Facebook</span>
 				</a>
 			</li>
 			<li>
 				<a href="{{ site.social.linkedin }}" target="_blank">
-					<span class="fa fa-2x fa-fw fa-linkedin-square" aria-hidden="true"></span>
+					<span class="icon icon-linkedin" aria-hidden="true"></span>
 					<span class="sr-only">Linkedin</span>
-				</a>
-			</li>
-			<li>
-				<a href="{{ site.social.tumblr }}" target="_blank">
-					<span class="fa fa-2x fa-fw fa-tumblr-square" aria-hidden="true"></span>
-					<span class="sr-only">Tumblr</span>
 				</a>
 			</li>
 		</ul>

@@ -1,46 +1,48 @@
 /* Navbar link */
+$navbar-brand-vertical: 2px;
+
 .navbar-default {
-	border-bottom: 0;
+	border: 0;
+
+	.navbar-brand {
+		padding: $navbar-brand-vertical $navbar-padding-horizontal;
+		font-size: $navbar-height - 2 * $navbar-brand-vertical;
+		line-height: $navbar-height - 2 * $navbar-brand-vertical;
+	}
+
 	.navbar-nav {
-		@media (min-width: $screen-sm-min) {
-			width: 100%;
-			text-align: center;
-			> li {
-				float: none;
-				display: inline-block;
-				&:not(:last-child) {
-					margin-right: -4px;
-				}
-			}
-		}
 		font-weight: 300;
-		text-transform:	uppercase;
-		> li > a:focus {
+		text-transform: uppercase;
+
+		li a:focus {
 			background-color: transparent;
 		}
-		> .active > a {
+
+		.active a {
 			background-color: $navbar-default-link-hover-bg;
 		}
 	}
 }
+
 /* Footer */
 footer {
 	height: $navbar-height * 0.7;
 	line-height: $navbar-height * 0.7;
-	background-color: $color2;
+	background-color: $color1;
 	font-size: .8em;
+	color: $color0;
+
 	a {
-		color: $text-color;
+		color: $color0;
 		text-decoration: none;
-		> .icon-up {
-			@extend .fa;
-			@extend .fa-lg;
-			@extend .fa-fw;
-			@extend .fa-chevron-circle-up;
+
+		.icon-up {
+			margin-left: 10px;
 		}
+
 		&:hover,
 		&:focus {
-			color: $text-color;
+			color: $color0;
 			text-decoration: none;
 		}
 	}

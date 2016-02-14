@@ -1,4 +1,4 @@
 ---
 ---
 {% include js/html5shiv.js %}
-{% include js/respond.js %}
+{% include js/respond.src.js %}
