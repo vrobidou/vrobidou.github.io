@@ -40,9 +40,13 @@ section {
 		margin: 0 0 $line-height-computed;
 	}
 
+	a {
+		font-weight: 700;
+	}
+
 	&#accueil {
 		padding-top: 2 * $navbar-height + 10;
-		background-image: url(../img/accueil-bg.jpg);
+		background-image: url("../img/accueil.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -51,7 +55,7 @@ section {
 			padding: $navbar-height 0 0;
 		}
 
-		.cadre {
+		.container {
 			display: table;
 			background: rgba($color3, 0.9);
 			color: $color0;
@@ -67,7 +71,7 @@ section {
 				width: 100%;
 			}
 
-			> div {
+			div {
 				display: table-cell;
 
 				@media (max-width: $screen-xs-max) {
@@ -108,7 +112,7 @@ section {
 			}
 		}
 
-		> .down {
+		.down {
 			position: absolute;
 			bottom: $navbar-height / 4 + 5;
 			left: 50%;
@@ -124,45 +128,61 @@ section {
 	}
 
 	&#a-propos {
-		a {
-			font-weight: 700;
-		}
-
 		@include section-color($color4, $color0, $color2);
 	}
 
 	&#prestations {
+		border-width: 0 0 10px 0;
+		border-image: url("../img/dots.svg") 33% round;
+
+		.container {
+			article {
+				text-align: center;
+
+				@include make-sm-column(4);
+
+				h1 {
+					display: inline-block;
+					padding: 10px 15px;
+					font-size: 2em;
+					font-weight: 400;
+					color: $color1;
+					background-color: $color2;
+				}
+			}
+
+			@media (max-width: $screen-xs-max) {
+				article + article {
+					margin-top: 50px;
+				}
+			}
+		}
+
 		@include section-color($body-bg, $text-color, $color3);
 	}
 
 	&#portfolio {
-		.row {
-			margin-top: $grid-gutter-width;
-		}
-
-		.nav.nav-pills a {
+		.nav-pills a {
 			cursor: pointer;
 		}
 
-		#projects {
-			@extend .row;
+		.row {
+			margin-top: $grid-gutter-width;
 
-			> .project {
-				@extend .col-xs-6;
+			.project {
+				@include make-xs-column(6);
 
-				@extend .col-sm-4;
+				@include make-sm-column(4);
 
-				@extend .col-md-3;
-
-				@extend .col-lg-3;
+				@include make-md-column(3);
 
 				margin-bottom: $grid-gutter-width;
 
-				.wrapper > .picture {
+				.thumbnail {
 					position: relative;
 					padding-bottom: 100%;
 
-					> a {
+					a {
 						display: block;
 						position: absolute;
 						top: 0;
@@ -181,16 +201,25 @@ section {
 	}
 
 	&#contact {
+		text-align: center;
+
 		ul {
-			text-align: center;
+			margin-top: 50px;
 
 			a {
-				color: $color1;
+				font-size: 50px;
+				line-height: 50px;
+				text-decoration: none;
+				color: $color0;
 
 				&:hover,
 				&:focus {
-					color: $color1;
+					color: $color0;
 				}
+			}
+
+			li + li {
+				margin-left: 20px;
 			}
 		}
 

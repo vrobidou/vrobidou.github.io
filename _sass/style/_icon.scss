@@ -1,16 +1,16 @@
 @font-face {
-	font-family: 'icon';
-	src: url('#{$icon-font-path}icon.eot?ebqjpc');
-	src: url('#{$icon-font-path}icon.eot?ebqjpc#iefix') format('embedded-opentype'),
-	url('#{$icon-font-path}icon.ttf?ebqjpc') format('truetype'),
-	url('#{$icon-font-path}icon.woff?ebqjpc') format('woff'),
-	url('#{$icon-font-path}icon.svg?ebqjpc#icon') format('svg');
+	font-family: "icon";
+	src: url("#{$icon-font-path}icon.eot?ebqjpc");
+	src: url("#{$icon-font-path}icon.eot?ebqjpc#iefix") format("embedded-opentype"),
+	url("#{$icon-font-path}icon.ttf?ebqjpc") format("truetype"),
+	url("#{$icon-font-path}icon.woff?ebqjpc") format("woff"),
+	url("#{$icon-font-path}icon.svg?ebqjpc#icon") format("svg");
 	font-weight: normal;
 	font-style: normal;
 }
 
 .icon {
-	font-family: 'icon' !important;
+	font-family: "icon" !important;
 	speak: none;
 	font-style: normal;
 	font-weight: normal;

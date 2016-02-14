@@ -14,11 +14,11 @@ $navbar-brand-vertical: 2px;
 		font-weight: 300;
 		text-transform: uppercase;
 
-		> li > a:focus {
+		li a:focus {
 			background-color: transparent;
 		}
 
-		> .active > a {
+		.active a {
 			background-color: $navbar-default-link-hover-bg;
 		}
 	}
@@ -36,12 +36,8 @@ footer {
 		color: $color0;
 		text-decoration: none;
 
-		> .icon-up {
-			//@extend .fa;
-			//@extend .fa-lg;
-			//@extend .fa-fw;
-			//@extend .fa-chevron-circle-up;
-
+		.icon-up {
+			margin-left: 10px;
 		}
 
 		&:hover,
