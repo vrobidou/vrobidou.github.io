@@ -1,23 +1,29 @@
 /* Navbar link */
 $navbar-brand-vertical: 2px;
+
 .navbar-default {
-	border-bottom: 0;
+	border: 0;
+
 	.navbar-brand {
 		padding: $navbar-brand-vertical $navbar-padding-horizontal;
-		font-size: $navbar-height - (2 * $navbar-brand-vertical);
-		line-height: $navbar-height - (2 * $navbar-brand-vertical);
+		font-size: $navbar-height - 2 * $navbar-brand-vertical;
+		line-height: $navbar-height - 2 * $navbar-brand-vertical;
 	}
+
 	.navbar-nav {
 		font-weight: 300;
-		text-transform:	uppercase;
+		text-transform: uppercase;
+
 		> li > a:focus {
 			background-color: transparent;
 		}
+
 		> .active > a {
 			background-color: $navbar-default-link-hover-bg;
 		}
 	}
 }
+
 /* Footer */
 footer {
 	height: $navbar-height * 0.7;
@@ -25,15 +31,19 @@ footer {
 	background-color: $color1;
 	font-size: .8em;
 	color: $color0;
+
 	a {
 		color: $color0;
 		text-decoration: none;
+
 		> .icon-up {
 			//@extend .fa;
 			//@extend .fa-lg;
 			//@extend .fa-fw;
 			//@extend .fa-chevron-circle-up;
+
 		}
+
 		&:hover,
 		&:focus {
 			color: $color0;

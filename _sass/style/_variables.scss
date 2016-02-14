@@ -1,20 +1,29 @@
+/* Color scheme */
 $color0:				#fff;
 $color1:				#000;
 $color2:				#fceb46;
 $color3:				#97c6cf;
 $color4:				#3d4c70;
+
+/* Override Bootstrap / Bootswatch default value */
 $body-bg:				$color0;
+$text-color:				$color1;
+$link-color:				$color3;
+$link-hover-color:			$color3;
+$web-font-path: "https://fonts.googleapis.com/css?family=Advent+Pro:300,400,700";
+$font-family-sans-serif:		"Advent Pro", sans-serif;
+$icon-font-path:			"../fonts/";
 $navbar-default-bg:			$color2;
 $navbar-default-link-color:		$color1;
 $navbar-default-link-hover-color:	$color1;
 $navbar-default-link-hover-bg:		$color0;
 $navbar-default-link-active-bg:		$color0;
-$link-color:				$color3;
-$link-hover-color:			$color3;
+$navbar-default-toggle-icon-bar-bg:	$color1;
 $nav-pills-active-link-hover-bg:	$color4;
-$icon-font-path:			"../fonts/";
-$web-font-path: "https://fonts.googleapis.com/css?family=Advent+Pro:300,400,500,600,700";
-$font-family-sans-serif: "Advent Pro", sans-serif;
+
+/* Import Bootstrap / Bootswatch variables */
 @import 'bootswatch/variables';
 @import 'bootstrap/variables';
-$container-lg:			$container-md;
+
+/* Do not use large format */
+$container-lg:				$container-md;
