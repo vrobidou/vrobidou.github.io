@@ -313,6 +313,8 @@ a {
 				text-align: center;
 				top: 0;
 				width: 2.5em;
+				background-color: _palette(nav-icon, active-bg);
+				color: _palette(nav-icon, active-fg);
 			}
 
 			&:hover {
