@@ -5,7 +5,7 @@
 @import "libs/mixins";
 @import "libs/vendor";
 @import "libs/breakpoints";
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:500,900");
 @import "fontawesome-all.min";
 
 // Breakpoints.
@@ -138,7 +138,7 @@ body, input, select, textarea {
 	color: _palette(fg);
 	font-family: "Source Sans Pro", sans-serif;
 	font-size: 15pt;
-	font-weight: 300 !important;
+	font-weight: 500 !important;
 	letter-spacing: -0.025em;
 	line-height: 1.75em;
 }
